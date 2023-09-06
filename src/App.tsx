@@ -1,5 +1,6 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
+import Intro from "./components/Intro";
 
 const App = () => {
   return (
@@ -7,17 +8,17 @@ const App = () => {
       templateAreas={`"nav"
                     "intro"
                     "projects"`}
-                    paddingX={20}
+                    paddingX={{base:7,lg:20,}}
     >
-      <GridItem area={"nav"}>
+      <GridItem overflow={"hidden"} area={"nav"}>
         <Navbar/>
       </GridItem>
 
-      <GridItem bg="pink.300" area={"intro"}>
-        Intro
+      <GridItem overflow={"hidden"} area={"intro"}>
+        <Intro/>
       </GridItem>
 
-      <GridItem bg="green.300" area={"projects"}>
+      <GridItem overflow={"hidden"} area={"projects"}>
         Projects
       </GridItem>
     </Grid>
