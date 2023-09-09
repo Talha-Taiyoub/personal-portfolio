@@ -24,7 +24,7 @@ const Navbar = () => {
 
       {/* for laptop screen */}
       <Box display={{ base: "none", md: "block" }}>
-        <HStack>
+        <HStack spacing={4}>
           <Button fontFamily={"monospace"} whiteSpace={"nowrap"}>
             Technologies
           </Button>

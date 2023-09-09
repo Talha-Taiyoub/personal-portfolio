@@ -1,7 +1,6 @@
 import { Box } from '@chakra-ui/react'
 import Lottie from 'lottie-react'
 import introAnimation from '../assets/anim5.json'
-import { useEffect, useRef } from 'react'
 
 
 const IntroAnimation = () => {
