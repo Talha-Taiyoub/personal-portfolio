@@ -27,12 +27,12 @@ const Intro = () => {
             paddingRight={{ base: "0px",lg:"60px", xl: "80px" }}
             paddingTop={{ base: "40px", lg: "0px" }}
           >
-            <Heading fontSize={{base:"xl",lg:"2xl"}} fontFamily={"monospace"}>Hello it's me,</Heading>
-            <Heading fontFamily={"monospace"} fontSize={{base:"5xl",lg:"6xl"}}>
+            <Heading fontSize={{base:"lg",lg:"2xl"}} fontFamily={"monospace"}>Hello it's me,</Heading>
+            <Heading fontFamily={"monospace"} fontSize={{base:"4xl",lg:"6xl"}}>
               Talha Taiyoub
             </Heading>
-            <Text textAlign={"justify"}>{text}</Text>
-            <Text paddingTop={{base:"20px",lg:"30px",xl:"40px"}}>Scroll For More</Text>
+            <Text fontSize={{lg:"md"}} color={"gray.400"} fontFamily={"monospace"} textAlign={"justify"}>{text}</Text>
+            <Text fontSize={{base:"sm",lg:"md"}} fontFamily={"monospace"} paddingTop={{base:"20px",lg:"30px",xl:"40px"}}>Scroll For More</Text>
           </Box>
         </GridItem>
 

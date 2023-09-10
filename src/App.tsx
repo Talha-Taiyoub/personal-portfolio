@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Technology from "./components/Technology";
 import Project from "./components/Project";
+import Education from "./components/Education";
 
 const App = () => {
   return (
@@ -10,8 +11,9 @@ const App = () => {
       templateAreas={`"nav"
                     "intro"
                     "technology"
-                    "projects"`}
-                    paddingX={{base:7,lg:20,}}
+                    "projects"
+                    "education"`}
+                    paddingX={{base:6,lg:20,}}
     >
       <GridItem overflow={"hidden"} area={"nav"}>
         <Navbar/>
@@ -28,7 +30,12 @@ const App = () => {
       <GridItem overflow={"hidden"} area={"projects"}>
         <Project/>
       </GridItem>
+
+      <GridItem overflow={"hidden"} area={"education"}>
+        <Education/>
+      </GridItem>
     </Grid>
+    
   );
 };
 export default App;

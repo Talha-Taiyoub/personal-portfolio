@@ -35,7 +35,7 @@ import card3 from "../assets/images/card3.jpg";
 const Project = () => {
   return (
     <Box paddingTop={{ base: "70px", lg: "100px" }}>
-      <Box>
+      <BodyContentContainer>
         <Grid
           templateAreas={{
             base: `"animation" "cardOneTwo" "cardThree"`,
@@ -44,7 +44,7 @@ const Project = () => {
           gridTemplateColumns={{ base: "1fr", lg: "1.5fr 1fr 1fr" }}
         >
           <GridItem display={"flex"} alignItems={"center"} area={"animation"}>
-            <Animation transitionDuration={1} scale={0.9} x_or_y="y">
+            <Animation transitionDuration={2} scale={0.9} x_or_y="x">
               <ProjectAnimation />
             </Animation>
           </GridItem>
@@ -52,7 +52,7 @@ const Project = () => {
           <GridItem area={"cardOneTwo"}>
             <SimpleGrid columns={1}>
               <Animation x_or_y="x" scale={1} transitionDuration={2}>
-                <Box borderRadius={20} paddingX={"20px"} paddingY={"20px"}>
+                <Box borderRadius={20} paddingX="20px" paddingY={"20px"}>
                   <Card overflow={"hidden"}>
                     <Image src={card1} />
                     <CardBody>
@@ -86,9 +86,7 @@ const Project = () => {
                         textAlign={"justify"}
                         fontFamily={"monospace"}
                       >
-                        A web application for teachers and students to connect.
-                        Teacher can create classrooms, assign students, upload
-                        materials, take quizzes and publish results.
+                        A classroom management system like Google Classroom,Canvas.
                       </Text>
                     </CardBody>
                   </Card>
@@ -96,7 +94,7 @@ const Project = () => {
               </Animation>
 
               <Animation transitionDuration={2} x_or_y="x" scale={1}>
-                <Box borderRadius={20} paddingX={"20px"} paddingY={"20px"}>
+                <Box borderRadius={20} paddingX="20px"  paddingY={"20px"}>
                   <Card overflow={"hidden"}>
                     <Image src={card2} />
                     <CardBody>
@@ -125,7 +123,7 @@ const Project = () => {
                         textAlign={"justify"}
                         fontFamily={"monospace"}
                       >
-                        A video game discovery app,later section will be written
+                        A video game discovery app, used rawg.io's api and made the frontend.
                       </Text>
                     </CardBody>
                   </Card>
@@ -136,7 +134,7 @@ const Project = () => {
 
           <GridItem display={"flex"} alignItems={"center"} area={"cardThree"}>
             <Animation scale={1} transitionDuration={2} x_or_y="x">
-              <Box borderRadius={20} paddingX={"20px"} paddingY={"20px"}>
+              <Box borderRadius={20} paddingX="20px"  paddingY={"20px"}>
                 <Card overflow={"hidden"}>
                   <Image src={card3} />
                   <CardBody>
@@ -170,7 +168,7 @@ const Project = () => {
                       textAlign={"justify"}
                       fontFamily={"monospace"}
                     >
-                      An e commerce web application
+                      An e-commerce web application to make shopping more convenient.
                     </Text>
                   </CardBody>
                 </Card>
@@ -178,7 +176,7 @@ const Project = () => {
             </Animation>
           </GridItem>
         </Grid>
-      </Box>
+      </BodyContentContainer>
     </Box>
   );
 };

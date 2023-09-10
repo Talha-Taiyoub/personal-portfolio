@@ -4,9 +4,9 @@ import projectAnimation from '../assets/techAnim1.json'
 
 const ProjectAnimation = () => {
   return (
-    <Box >
+    <Box  >
       <Lottie animationData={projectAnimation} autoplay={true} loop={true} ></Lottie> 
-      <Text fontSize={"lg"} fontFamily={"monospace"} textAlign={"center"}>Recent Projects</Text>
+      <Text color={"gray.500"} fontWeight={"extrabold"} fontSize={"3xl"} fontFamily={"monospace"} textAlign={"center"}>Recent Projects</Text>
     </Box>
   )
 }

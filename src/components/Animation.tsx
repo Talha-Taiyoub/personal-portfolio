@@ -25,7 +25,7 @@ const Animation = ({ children, x_or_y,transitionDuration,scale }: Props) => {
     window.innerWidth || document.documentElement.clientWidth;
   let visible = {};
   if (x_or_y == "y") visible = { opacity: 1, y: [viewportWidth, -50, 0],scale:scale };
-  else visible = { opacity: 1, x: [-viewportWidth, 0],scale:scale };
+  else visible = { opacity: 1, x: [-viewportWidth, 0],scale:scale};
 
   const animationVariants = {
     hidden: { opacity: 0 },
