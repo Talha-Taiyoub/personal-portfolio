@@ -17,7 +17,7 @@ const Milestone = ({ milestones }: Props) => {
   return (
     <Box>
       <Text
-        marginBottom={"60px"}
+        marginBottom={{base:"40px",lg:"60px"}}
         fontFamily={"monospace"}
         textAlign={{base:"center",md:"center"}}
         fontSize={{ base: "4xl", lg: "5xl" }}
