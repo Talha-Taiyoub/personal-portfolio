@@ -34,9 +34,10 @@ const Technology = () => {
       <Box marginTop={{ base: "140px", lg: "220px", xl: "220px" }} marginBottom={"60px"}>
         <Heading
           textAlign={"center"}
-          fontSize={{ base: "3xl", lg: "4xl", xl: "4xl" }}
+          fontSize={{ base: "3xl", lg: "4xl", xl: "5xl" }}
           fontFamily={"monospace"}
-          //boxShadow= {"0 4px 6px #671819"}
+          //textShadow={"8px 6px 10px gray"}
+          fontWeight={{base:"bold",lg:"normal"}}
         >
           Made my hands dirty with:
         </Heading>
@@ -53,7 +54,8 @@ const Technology = () => {
                     <Icon
                       as={item.icon}
                       boxSize={"60px"}
-                      color="#671819"
+                      //color="#671819"
+                      color={"gray.600"}
                     ></Icon>
                   </Box>
                   <Text

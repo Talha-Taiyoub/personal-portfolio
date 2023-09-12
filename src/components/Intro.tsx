@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Heading, Text, useBreakpointValue } from "@chakra-ui/react";
 import IntroAnimation from "./IntroAnimation";
 import Animation from "./Animation";
 import BodyContentContainer from "./BodyContentContainer";
@@ -7,6 +7,8 @@ const text =
   "Throughout his career, Talha has worked on a diverse range of web development projects, from building responsive and dynamic websites to developing custom web applications that solve complex business challenges. He is well-versed in a variety of programming languages and web development technologies";
 
 const Intro = () => {
+  const isMobile = useBreakpointValue({ base: true, lg: false });
+  //const isDesktop = useBreakpointValue({ base: false, lg: true });
   return (
     <BodyContentContainer>
       <Grid
@@ -38,7 +40,7 @@ const Intro = () => {
 
         {/* AnimationArea */}
         <GridItem overflow={"hidden"} area={"animation"}>
-          <Animation x_or_y="y" transitionDuration={1.5} scale={1.1}>
+          <Animation x_or_y="y" transitionDuration={1.5} scale={isMobile?1.3:1.1}>
             <IntroAnimation />
           </Animation>
         </GridItem>
