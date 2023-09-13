@@ -54,13 +54,13 @@ const Navbar = () => {
 
       {/* for mobile screen */}
       <Box display={{ base: "block", md: "none" }}>
-        <Menu isLazy styleConfig={{backgroundColor:"gray.700"}}>
+        <Menu isLazy>
           <MenuButton
-            colorScheme="white"
             as={IconButton}
             aria-label="Options"
             icon={<HamburgerIcon />}
             variant="outline"
+            color={"white"}
           />
           <MenuList>
             <MenuItem>
