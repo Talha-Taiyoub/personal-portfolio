@@ -28,9 +28,9 @@ import { GrMysql } from "react-icons/gr";
 
 import ProjectAnimation from "./ProjectAnimation";
 import Animation from "./Animation";
-import card1 from "../assets/images/card1.jpg";
-import card2 from "../assets/images/card2.jpg";
-import card3 from "../assets/images/card3.jpg";
+import card1 from "../assets/images/eduHub2.jpg";
+import card2 from "../assets/images/gamehub.jpg";
+import card3 from "../assets/images/haatBajar.jpeg";
 
 const Project = () => {
   return (

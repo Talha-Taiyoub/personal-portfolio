@@ -68,7 +68,8 @@ const ContactMe = () => {
             target="_blank"
           >
             <Button leftIcon={<BiMailSend style={{ fontSize: "1.5em" }}/>} variant='outline' size={"lg"} borderRadius={"30px"}
-            borderColor='green.500'>Get in touch</Button>
+            borderColor='green.500'
+            _hover={{backgroundColor:"green.500",cursor:"pointer"}}>Get in touch</Button>
           </Link>
         </Box>
       </GridItem>
