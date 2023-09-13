@@ -135,7 +135,7 @@ const Project = () => {
                   <Image src={card3} />
                   <CardBody bg={"gray.700"}>
                     <Heading color={"white"} fontSize={{base:"2xl",md:"3xl"}} fontWeight={{base:"normal",md:"semibold"}}>
-                      Haat-Bajar
+                      Haat-Baajar
                     </Heading>
                     <HStack>
                       <Text color={"white"} fontSize={"md"} fontFamily={"monospace"}>
