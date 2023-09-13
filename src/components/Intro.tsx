@@ -4,7 +4,7 @@ import Animation from "./Animation";
 import BodyContentContainer from "./BodyContentContainer";
 
 const text =
-  "Throughout his career, Talha has worked on a diverse range of web development projects, from building responsive and dynamic websites to developing custom web applications that solve complex business challenges. He is well-versed in a variety of programming languages and web development technologies";
+  "Throughout my career, I have had the opportunity to work on a diverse range of web development projects. These experiences have included building responsive and dynamic websites as well as developing custom web applications that tackle complex business challenges. I have become well-versed in a variety of programming languages and web development technologies along the way."
 
 const Intro = () => {
   const isMobile = useBreakpointValue({ base: true, lg: false });
