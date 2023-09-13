@@ -54,7 +54,7 @@ const Navbar = () => {
 
       {/* for mobile screen */}
       <Box display={{ base: "block", md: "none" }}>
-        <Menu isLazy>
+        <Menu isLazy styleConfig={{backgroundColor:"gray.700"}}>
           <MenuButton
             colorScheme="blackAlpha"
             as={IconButton}
