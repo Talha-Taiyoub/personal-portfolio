@@ -7,7 +7,7 @@ interface Props {
 
 const BodyContentContainer = ({ children }: Props) => {
   return (
-    <Box bg={"##6b7db3"} paddingX={{ base: "10px", lg: "60px", xl: "80px" }}>{children}</Box>
+    <Box paddingX={{ base: "10px", lg: "60px", xl: "80px" }}>{children}</Box>
   );
 };
 
