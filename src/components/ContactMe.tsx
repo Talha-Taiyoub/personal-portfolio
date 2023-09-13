@@ -67,7 +67,7 @@ const ContactMe = () => {
             href="mailto:aniktalha@gmail.com?subject=Wanna%20Work%20Together"
             target="_blank"
           >
-            <Button leftIcon={<BiMailSend style={{ fontSize: "1.5em" }}/>} variant='outline' size={"lg"} borderRadius={"30px"}
+            <Button leftIcon={<BiMailSend style={{ fontSize: "1.5em",color:"white" }}/>} variant='outline' size={"lg"} borderRadius={"30px"}
             borderColor='green.500'
             _hover={{backgroundColor:"green.500",cursor:"pointer"}}><Text color={"white"}>Get In Touch</Text></Button>
           </Link>
