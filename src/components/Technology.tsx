@@ -33,6 +33,7 @@ const Technology = () => {
     <BodyContentContainer>
       <Box marginTop={{ base: "140px", lg: "220px", xl: "220px" }} marginBottom={"60px"}>
         <Heading
+          color={"white"}
           textAlign={"center"}
           fontSize={{ base: "3xl", lg: "4xl", xl: "5xl" }}
           fontFamily={"monospace"}

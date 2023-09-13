@@ -26,6 +26,7 @@ const Intro = () => {
           justifyContent={"center"}
         >
           <Box
+            color={"white"}
             paddingRight={{ base: "0px",lg:"60px", xl: "80px" }}
             paddingTop={{ base: "40px", lg: "0px" }}
           >

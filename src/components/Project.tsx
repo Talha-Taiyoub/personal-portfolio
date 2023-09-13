@@ -52,11 +52,11 @@ const Project = () => {
                   <Card overflow={"hidden"}>
                     <Image src={card1} />
                     <CardBody>
-                      <Heading fontFamily={"monospace"} fontSize={"3xl"}>
+                      <Heading color={"white"} fontFamily={"monospace"} fontSize={"3xl"}>
                         Edu-Hub
                       </Heading>
                       <HStack>
-                        <Text fontSize={"md"} fontFamily={"monospace"}>
+                        <Text color={"white"} fontSize={"md"} fontFamily={"monospace"}>
                           Tech:
                         </Text>
                         <HStack spacing={5}>
@@ -94,11 +94,11 @@ const Project = () => {
                   <Card overflow={"hidden"}>
                     <Image src={card2} />
                     <CardBody>
-                      <Heading fontFamily={"monospace"} fontSize={"3xl"}>
+                      <Heading color={"white"} fontFamily={"monospace"} fontSize={"3xl"}>
                         Game-Hub
                       </Heading>
                       <HStack>
-                        <Text fontSize={"md"} fontFamily={"monospace"}>
+                        <Text color={"white"} fontSize={"md"} fontFamily={"monospace"}>
                           Tech:
                         </Text>
                         <HStack spacing={5}>
@@ -134,11 +134,11 @@ const Project = () => {
                 <Card overflow={"hidden"}>
                   <Image src={card3} />
                   <CardBody>
-                    <Heading fontFamily={"monospace"} fontSize={"3xl"}>
+                    <Heading color={"white"} fontFamily={"monospace"} fontSize={"3xl"}>
                       Haat-Bajar
                     </Heading>
                     <HStack>
-                      <Text fontSize={"md"} fontFamily={"monospace"}>
+                      <Text color={"white"} fontSize={"md"} fontFamily={"monospace"}>
                         Tech:
                       </Text>
                       <HStack spacing={5}>
