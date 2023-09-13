@@ -51,7 +51,7 @@ const Project = () => {
                 <Box borderRadius={20} paddingX={{base:"40px",lg:"20px"}} paddingY={"20px"}>
                   <Card overflow={"hidden"}>
                     <Image src={card1} />
-                    <CardBody>
+                    <CardBody bg={"gray.700"}>
                       <Heading color={"white"} fontFamily={"monospace"} fontSize={"3xl"}>
                         Edu-Hub
                       </Heading>
@@ -93,7 +93,7 @@ const Project = () => {
                 <Box borderRadius={20} paddingX={{base:"40px",lg:"20px"}}  paddingY={"20px"}>
                   <Card overflow={"hidden"}>
                     <Image src={card2} />
-                    <CardBody>
+                    <CardBody bg={"gray.700"}>
                       <Heading color={"white"} fontFamily={"monospace"} fontSize={"3xl"}>
                         Game-Hub
                       </Heading>
@@ -133,7 +133,7 @@ const Project = () => {
               <Box borderRadius={20} paddingX={{base:"40px",lg:"20px"}}  paddingY={"20px"}>
                 <Card overflow={"hidden"}>
                   <Image src={card3} />
-                  <CardBody>
+                  <CardBody bg={"gray.700"}>
                     <Heading color={"white"} fontFamily={"monospace"} fontSize={"3xl"}>
                       Haat-Bajar
                     </Heading>

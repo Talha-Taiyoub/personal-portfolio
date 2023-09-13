@@ -34,7 +34,7 @@ const ContactMe = () => {
           justifyContent={"center"}
           alignItems={"center"}
         >
-          <Text fontWeight={"black"} fontSize={"3xl"}>
+          <Text color={"white"} fontWeight={"extrabold"} fontSize={"3xl"}>
             Start a Project
           </Text>
         </Box>
@@ -49,7 +49,7 @@ const ContactMe = () => {
           justifyContent={"center"}
           alignItems={"center"}
         >
-          <Text textAlign={"center"} fontSize={"md"}>
+          <Text color={"white"} textAlign={"center"} fontSize={"md"}>
             {text}
           </Text>
         </Box>
@@ -69,7 +69,7 @@ const ContactMe = () => {
           >
             <Button leftIcon={<BiMailSend style={{ fontSize: "1.5em" }}/>} variant='outline' size={"lg"} borderRadius={"30px"}
             borderColor='green.500'
-            _hover={{backgroundColor:"green.500",cursor:"pointer"}}>Get in touch</Button>
+            _hover={{backgroundColor:"green.500",cursor:"pointer"}}><Text color={"white"}>Get In Touch</Text></Button>
           </Link>
         </Box>
       </GridItem>
