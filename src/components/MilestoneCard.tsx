@@ -17,10 +17,10 @@ const MilestoneCard = ({ milestone }: Props) => {
       paddingLeft={{base:"20px",lg:milestone.id % 2 == 0 ? "20px" : "0px"}}
       paddingRight={{base:"0px",lg:milestone.id % 2 == 0 ? "0px" : "20px"}}
     >
-      <Text fontWeight={"extrabold"} fontSize={{ base: "xl", lg: "2xl" }}>
+      <Text color={"white"} fontWeight={"extrabold"} fontSize={{ base: "xl", lg: "2xl" }}>
         {milestone.title}
       </Text>
-      <Text fontSize={{ lg: "sm" }}>{milestone.description}</Text>
+      <Text color={"white"} fontSize={{ lg: "sm" }}>{milestone.description}</Text>
     </Stack>
   );
 };
