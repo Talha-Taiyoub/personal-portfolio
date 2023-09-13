@@ -16,6 +16,7 @@ import {
   SiDjango,
   SiVercel,
   SiPostgresql,
+  SiChakraui
 } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaReact} from "react-icons/fa";
@@ -108,7 +109,7 @@ const Project = () => {
                           ></Icon>
                           <Icon
                             boxSize={"20px"}
-                            as={SiVercel}
+                            as={SiChakraui}
                             color={"gray.300"}
                           ></Icon>
                         </HStack>

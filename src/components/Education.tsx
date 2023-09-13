@@ -6,11 +6,12 @@ import {MdSchool} from 'react-icons/md'
 import {GiArchiveResearch} from 'react-icons/gi'
 
 
+
 const milestones = [
   {
     id: 1,
     title: 'Research (ongoing)',
-    description: "Emotion detection using Deep Learning",
+    description: "Emotion detection using Deep Learning.",
     icon:GiArchiveResearch
   },
   {
