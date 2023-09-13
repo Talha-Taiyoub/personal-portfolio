@@ -11,6 +11,7 @@ import Canvas from "./components/Canvas";
 const App = () => {
   return (
     <Grid
+      color={"white"}
       templateAreas={`"nav"
                     "intro"
                     "technology"
