@@ -3,7 +3,6 @@ import {
   Box,
   Card,
   CardBody,
-  Container,
   Grid,
   GridItem,
   HStack,
@@ -15,15 +14,11 @@ import {
 } from "@chakra-ui/react";
 import {
   SiDjango,
-  SiPython,
-  SiTypescript,
   SiVercel,
   SiPostgresql,
-  SiHeroku,
-  SiMysql,
 } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
-import { FaReact, FaJava, FaLaptopCode, FaRobot, FaPhp } from "react-icons/fa";
+import { FaReact} from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 
 import ProjectAnimation from "./ProjectAnimation";
