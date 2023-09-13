@@ -56,7 +56,7 @@ const Navbar = () => {
       <Box display={{ base: "block", md: "none" }}>
         <Menu isLazy styleConfig={{backgroundColor:"gray.700"}}>
           <MenuButton
-            colorScheme="blackAlpha"
+            colorScheme="white"
             as={IconButton}
             aria-label="Options"
             icon={<HamburgerIcon />}
