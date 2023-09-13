@@ -37,7 +37,7 @@ const milestones = [
 
 const Education = () => {
   return (
-    <Box paddingTop={"160px"} paddingBottom={"100px"}>
+    <Box paddingTop={"160px"}>
         <BodyContentContainer>
           <Milestone milestones={milestones}></Milestone>
         </BodyContentContainer>

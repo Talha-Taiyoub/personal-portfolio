@@ -17,7 +17,7 @@ const Navbar = () => {
     <HStack justifyContent={"space-between"} paddingTop={{ base: 2, md: 3 }}>
       <Image
         src={mainLogo}
-        boxSize={{base:"65px",lg:"90px"}}
+        boxSize={{ base: "65px", lg: "90px" }}
         objectFit={"cover"}
         borderRadius={"md"}
       ></Image>
@@ -34,7 +34,7 @@ const Navbar = () => {
           <Button fontFamily={"monospace"} whiteSpace={"nowrap"}>
             Education
           </Button>
-          <Button fontFamily={"monospace"}>Blogs</Button>
+          <Button fontFamily={"monospace"}>Canvas</Button>
         </HStack>
       </Box>
 
@@ -77,7 +77,7 @@ const Navbar = () => {
             </MenuItem>
             <MenuItem>
               <Button width={"100%"} fontFamily={"monospace"}>
-                Blogs
+                Canvas
               </Button>
             </MenuItem>
           </MenuList>

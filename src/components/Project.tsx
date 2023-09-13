@@ -52,7 +52,7 @@ const Project = () => {
           <GridItem area={"cardOneTwo"}>
             <SimpleGrid columns={1}>
               <Animation x_or_y="x" scale={1} transitionDuration={2}>
-                <Box borderRadius={20} paddingX="20px" paddingY={"20px"}>
+                <Box borderRadius={20} paddingX={{base:"40px",lg:"20px"}} paddingY={"20px"}>
                   <Card overflow={"hidden"}>
                     <Image src={card1} />
                     <CardBody>
@@ -94,7 +94,7 @@ const Project = () => {
               </Animation>
 
               <Animation transitionDuration={2} x_or_y="x" scale={1}>
-                <Box borderRadius={20} paddingX="20px"  paddingY={"20px"}>
+                <Box borderRadius={20} paddingX={{base:"40px",lg:"20px"}}  paddingY={"20px"}>
                   <Card overflow={"hidden"}>
                     <Image src={card2} />
                     <CardBody>
@@ -134,7 +134,7 @@ const Project = () => {
 
           <GridItem display={"flex"} alignItems={"center"} area={"cardThree"}>
             <Animation scale={1} transitionDuration={2} x_or_y="x">
-              <Box borderRadius={20} paddingX="20px"  paddingY={"20px"}>
+              <Box borderRadius={20} paddingX={{base:"40px",lg:"20px"}}  paddingY={"20px"}>
                 <Card overflow={"hidden"}>
                   <Image src={card3} />
                   <CardBody>

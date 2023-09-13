@@ -4,6 +4,9 @@ import Intro from "./components/Intro";
 import Technology from "./components/Technology";
 import Project from "./components/Project";
 import Education from "./components/Education";
+import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
+import Canvas from "./components/Canvas";
 
 const App = () => {
   return (
@@ -12,7 +15,10 @@ const App = () => {
                     "intro"
                     "technology"
                     "projects"
-                    "education"`}
+                    "education"
+                    "contactMe"
+                    "canvas"
+                    "footer"`}
                     paddingX={{base:6,lg:20,}}
     >
       <GridItem overflow={"hidden"} area={"nav"}>
@@ -33,6 +39,18 @@ const App = () => {
 
       <GridItem overflow={"hidden"} area={"education"}>
         <Education/>
+      </GridItem>
+      
+      <GridItem overflow={"hidden"} area={"contactMe"}>
+        <ContactMe/>
+      </GridItem>
+
+      <GridItem overflow={"hidden"} area={"canvas"}>
+        <Canvas/>
+      </GridItem>
+
+      <GridItem overflow={"hidden"} area={"footer"}>
+        <Footer/>
       </GridItem>
     </Grid>
     
