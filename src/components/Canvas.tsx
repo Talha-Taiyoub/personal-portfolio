@@ -8,7 +8,8 @@ const Canvas = () => {
         <BodyContentContainer>
       <Text
         color={"White"}
-        fontSize={"5xl"}
+        fontSize={{base:"3xl",lg:"5xl"}}
+        fontWeight={{base:"thin",md:"normal"}}
         fontFamily={"monospace"}
         textAlign={"center"}
       >

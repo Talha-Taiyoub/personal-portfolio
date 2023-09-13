@@ -14,7 +14,7 @@ const MilestoneIcon = ({ icon }: Props) => {
       alignItems="center"
       justifyContent="center"
     >
-      <Center position={"relative"} width="3px" height="100%" bg="#671819"> 
+      <Center position={"relative"} width="3px" height="100%" bg="gray.400"> 
         <Circle position={"absolute"} top={"20px"} size={{base:"35px",lg:"40px"}} bg="white">
           <Icon as={icon} boxSize={{base:6,lg:7}} color={"gray.600"} />
         </Circle>

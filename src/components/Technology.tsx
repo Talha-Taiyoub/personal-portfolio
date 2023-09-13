@@ -37,8 +37,7 @@ const Technology = () => {
           textAlign={"center"}
           fontSize={{ base: "3xl", lg: "4xl", xl: "5xl" }}
           fontFamily={"monospace"}
-          //textShadow={"8px 6px 10px gray"}
-          fontWeight={{base:"bold",lg:"normal"}}
+          fontWeight={{base:"thin",lg:"normal"}}
         >
           Made my hands dirty with:
         </Heading>
@@ -56,7 +55,7 @@ const Technology = () => {
                       as={item.icon}
                       boxSize={"60px"}
                       //color="#671819"
-                      color={"gray.600"}
+                      color={"gray.400"}
                     ></Icon>
                   </Box>
                   <Text

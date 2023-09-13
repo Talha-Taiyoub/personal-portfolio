@@ -52,7 +52,7 @@ const Project = () => {
                   <Card overflow={"hidden"}>
                     <Image src={card1} />
                     <CardBody bg={"gray.700"}>
-                      <Heading color={"white"} fontFamily={"monospace"} fontSize={"3xl"}>
+                      <Heading color={"white"} fontFamily={"monospace"} fontSize={{base:"2xl",md:"3xl"}} fontWeight={{base:"normal",md:"semibold"}}>
                         Edu-Hub
                       </Heading>
                       <HStack>
@@ -94,7 +94,7 @@ const Project = () => {
                   <Card overflow={"hidden"}>
                     <Image src={card2} />
                     <CardBody bg={"gray.700"}>
-                      <Heading color={"white"} fontFamily={"monospace"} fontSize={"3xl"}>
+                      <Heading color={"white"} fontFamily={"monospace"} fontSize={{base:"2xl",md:"3xl"}} fontWeight={{base:"normal",md:"semibold"}}>
                         Game-Hub
                       </Heading>
                       <HStack>
@@ -134,7 +134,7 @@ const Project = () => {
                 <Card overflow={"hidden"}>
                   <Image src={card3} />
                   <CardBody bg={"gray.700"}>
-                    <Heading color={"white"} fontFamily={"monospace"} fontSize={"3xl"}>
+                    <Heading color={"white"} fontSize={{base:"2xl",md:"3xl"}} fontWeight={{base:"normal",md:"semibold"}}>
                       Haat-Bajar
                     </Heading>
                     <HStack>

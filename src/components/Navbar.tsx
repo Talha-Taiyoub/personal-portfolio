@@ -10,14 +10,14 @@ import {
   MenuList,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import mainLogo from "../assets/mainLogo.webp";
+import mainLogo from "../assets/akatsuki.svg";
 
 const Navbar = () => {
   return (
     <HStack justifyContent={"space-between"} paddingTop={{ base: 2, md: 3 }}>
       <Image
         src={mainLogo}
-        boxSize={{ base: "65px", lg: "90px" }}
+        boxSize={{ base: "60px", lg: "80px" }}
         objectFit={"cover"}
         borderRadius={"md"}
       ></Image>
@@ -26,34 +26,40 @@ const Navbar = () => {
       <Box display={{ base: "none", md: "block" }}>
         <HStack spacing={4}>
           <Button
-            colorScheme="blackAlpha"
+            color={"white"}
+            variant={"outline"}
             fontFamily={"monospace"}
             whiteSpace={"nowrap"}
           >
             Technologies
           </Button>
           <Button
-            colorScheme="blackAlpha"
+            color={"white"}
+            variant={"outline"}
             fontFamily={"monospace"}
             whiteSpace={"nowrap"}
           >
             Projects
           </Button>
           <Button
-            colorScheme="blackAlpha"
+            color={"white"}
+            variant={"outline"}
             fontFamily={"monospace"}
             whiteSpace={"nowrap"}
           >
             Education
-          </Button>
-          <Button colorScheme="blackAlpha" fontFamily={"monospace"}>
+            </Button>
+            <Button 
+            color={"white"}
+            variant={"outline"}
+            fontFamily={"monospace"}>
             Canvas
           </Button>
         </HStack>
       </Box>
 
       {/* for mobile screen */}
-      <Box display={{ base: "block", md: "none" }}>
+      <Box display={{ base: "block", md: "none" }} paddingRight={"10px"}>
         <Menu isLazy>
           <MenuButton
             as={IconButton}
@@ -65,7 +71,8 @@ const Navbar = () => {
           <MenuList>
             <MenuItem>
               <Button
-                colorScheme="blackAlpha"
+                color={"white"}
+                variant={"outline"}
                 width={"100%"}
                 fontFamily={"monospace"}
                 whiteSpace={"nowrap"}
@@ -75,7 +82,8 @@ const Navbar = () => {
             </MenuItem>
             <MenuItem>
               <Button
-                colorScheme="blackAlpha"
+                color={"white"}
+                variant={"outline"}
                 width={"100%"}
                 fontFamily={"monospace"}
                 whiteSpace={"nowrap"}
@@ -85,7 +93,8 @@ const Navbar = () => {
             </MenuItem>
             <MenuItem>
               <Button
-                colorScheme="blackAlpha"
+                color={"white"}
+                variant={"outline"}
                 width={"100%"}
                 fontFamily={"monospace"}
                 whiteSpace={"nowrap"}
@@ -94,8 +103,9 @@ const Navbar = () => {
               </Button>
             </MenuItem>
             <MenuItem>
-              <Button 
-                colorScheme="blackAlpha"
+            <Button 
+                color={"white"}
+                variant={"outline"}
                 width={"100%"}
                 fontFamily={"monospace"}
                 whiteSpace={"nowrap"}

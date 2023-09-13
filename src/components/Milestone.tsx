@@ -21,8 +21,8 @@ const Milestone = ({ milestones }: Props) => {
         marginBottom={{base:"40px",lg:"60px"}}
         fontFamily={"monospace"}
         textAlign={{base:"center",md:"center"}}
-        fontSize={{ base: "4xl", lg: "5xl" }}
-        fontWeight={{base:"bold",lg:"normal"}}
+        fontSize={{ base: "3xl", lg: "5xl" }}
+        fontWeight={{base:"thin",md:"normal"}}
         //textShadow={"8px 6px 11px gray"}
   
       >
