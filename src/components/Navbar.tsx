@@ -25,16 +25,30 @@ const Navbar = () => {
       {/* for laptop screen */}
       <Box display={{ base: "none", md: "block" }}>
         <HStack spacing={4}>
-          <Button fontFamily={"monospace"} whiteSpace={"nowrap"}>
+          <Button
+            colorScheme="blackAlpha"
+            fontFamily={"monospace"}
+            whiteSpace={"nowrap"}
+          >
             Technologies
           </Button>
-          <Button fontFamily={"monospace"} whiteSpace={"nowrap"}>
+          <Button
+            colorScheme="blackAlpha"
+            fontFamily={"monospace"}
+            whiteSpace={"nowrap"}
+          >
             Projects
           </Button>
-          <Button fontFamily={"monospace"} whiteSpace={"nowrap"}>
+          <Button
+            colorScheme="blackAlpha"
+            fontFamily={"monospace"}
+            whiteSpace={"nowrap"}
+          >
             Education
           </Button>
-          <Button fontFamily={"monospace"}>Canvas</Button>
+          <Button colorScheme="blackAlpha" fontFamily={"monospace"}>
+            Canvas
+          </Button>
         </HStack>
       </Box>
 
@@ -42,6 +56,7 @@ const Navbar = () => {
       <Box display={{ base: "block", md: "none" }}>
         <Menu isLazy>
           <MenuButton
+            colorScheme="blackAlpha"
             as={IconButton}
             aria-label="Options"
             icon={<HamburgerIcon />}
@@ -50,6 +65,7 @@ const Navbar = () => {
           <MenuList>
             <MenuItem>
               <Button
+                colorScheme="blackAlpha"
                 width={"100%"}
                 fontFamily={"monospace"}
                 whiteSpace={"nowrap"}
@@ -59,6 +75,7 @@ const Navbar = () => {
             </MenuItem>
             <MenuItem>
               <Button
+                colorScheme="blackAlpha"
                 width={"100%"}
                 fontFamily={"monospace"}
                 whiteSpace={"nowrap"}
@@ -68,6 +85,7 @@ const Navbar = () => {
             </MenuItem>
             <MenuItem>
               <Button
+                colorScheme="blackAlpha"
                 width={"100%"}
                 fontFamily={"monospace"}
                 whiteSpace={"nowrap"}
@@ -76,7 +94,12 @@ const Navbar = () => {
               </Button>
             </MenuItem>
             <MenuItem>
-              <Button width={"100%"} fontFamily={"monospace"}>
+              <Button 
+                colorScheme="blackAlpha"
+                width={"100%"}
+                fontFamily={"monospace"}
+                whiteSpace={"nowrap"}
+                 >
                 Canvas
               </Button>
             </MenuItem>
