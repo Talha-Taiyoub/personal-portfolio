@@ -31,7 +31,7 @@ const Intro = () => {
             paddingTop={{ base: "40px", lg: "0px" }}
           >
             <Heading fontSize={{base:"lg",lg:"2xl"}} fontFamily={"monospace"} fontWeight={{base:"semibold",md:"semibold"}} >Hello it's me,</Heading>
-            <Heading fontFamily={"monospace"} fontSize={{base:"4xl",lg:"6xl"}} fontWeight={{base:"semibold",md:"semibold"}}>
+            <Heading textShadow={"10px 8px 8px black"} fontFamily={"monospace"} fontSize={{base:"4xl",lg:"6xl"}} fontWeight={{base:"semibold",md:"semibold"}}>
               Talha Taiyoub
             </Heading>
             <Text fontSize={{lg:"md"}} color={"gray.400"} fontFamily={"monospace"} textAlign={"justify"}>{text}</Text>

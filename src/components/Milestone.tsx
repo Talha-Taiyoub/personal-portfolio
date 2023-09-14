@@ -23,7 +23,8 @@ const Milestone = ({ milestones }: Props) => {
         textAlign={{base:"center",md:"center"}}
         fontSize={{ base: "3xl", lg: "5xl" }}
         fontWeight={"normal"}
-        //textShadow={"8px 6px 11px gray"}
+        //textShadow={"8px 6px 10px black"}
+        textShadow={"10px 8px 8px black"}
   
       >
         Academics
