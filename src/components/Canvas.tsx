@@ -9,7 +9,6 @@ const Canvas = () => {
       <Text
         color={"White"}
         fontSize={{base:"3xl",lg:"5xl"}}
-        fontWeight={{base:"thin",md:"normal"}}
         fontFamily={"monospace"}
         textAlign={"center"}
       >

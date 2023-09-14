@@ -22,7 +22,7 @@ const Milestone = ({ milestones }: Props) => {
         fontFamily={"monospace"}
         textAlign={{base:"center",md:"center"}}
         fontSize={{ base: "3xl", lg: "5xl" }}
-        fontWeight={{base:"thin",md:"normal"}}
+        fontWeight={"normal"}
         //textShadow={"8px 6px 11px gray"}
   
       >
