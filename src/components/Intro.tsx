@@ -63,7 +63,7 @@ const Intro = () => {
             <Text
               fontSize={{ base: "sm", lg: "md" }}
               fontFamily={"monospace"}
-              paddingTop={{ base: "30px", xl: "40px" }}
+              paddingTop="40px"
             >
               Scroll For More
             </Text>
