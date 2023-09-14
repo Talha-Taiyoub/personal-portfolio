@@ -30,8 +30,8 @@ const Intro = () => {
             paddingRight={{ base: "0px",lg:"60px", xl: "80px" }}
             paddingTop={{ base: "40px", lg: "0px" }}
           >
-            <Heading fontSize={{base:"lg",lg:"2xl"}} fontFamily={"monospace"} fontWeight={{base:"thin",md:"semibold"}} >Hello it's me,</Heading>
-            <Heading fontFamily={"monospace"} fontSize={{base:"4xl",lg:"6xl"}} fontWeight={{base:"thin",md:"semibold"}}>
+            <Heading fontSize={{base:"lg",lg:"2xl"}} fontFamily={"monospace"} fontWeight={{base:"normal",md:"semibold"}} >Hello it's me,</Heading>
+            <Heading fontFamily={"monospace"} fontSize={{base:"4xl",lg:"6xl"}} fontWeight={{base:"normal",md:"semibold"}}>
               Talha Taiyoub
             </Heading>
             <Text fontSize={{lg:"md"}} color={"gray.400"} fontFamily={"monospace"} textAlign={"justify"}>{text}</Text>

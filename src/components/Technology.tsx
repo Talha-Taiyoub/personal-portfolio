@@ -37,7 +37,7 @@ const Technology = () => {
           textAlign={"center"}
           fontSize={{ base: "3xl", lg: "4xl", xl: "5xl" }}
           fontFamily={"monospace"}
-          fontWeight={{base:"thin",lg:"normal"}}
+          //fontWeight={{base:"thin",lg:"normal"}}
         >
           Made my hands dirty with:
         </Heading>
