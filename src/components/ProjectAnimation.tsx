@@ -7,7 +7,7 @@ const ProjectAnimation = () => {
     <Container  >
       <Lottie animationData={projectAnimation} autoplay={true} loop={true} ></Lottie> 
       <Text color={"white"} fontSize={{base:"3xl",lg:"4xl"}} fontFamily={"monospace"} textAlign={"center"}
-       fontWeight={{base:"normal",md:"extrabold"}}
+       fontWeight={{base:"bold",md:"extrabold"}}
       >Recent Projects</Text>
     </Container>
   )
