@@ -56,10 +56,10 @@ const Project = () => {
                         Edu-Hub
                       </Heading>
                       <HStack>
-                        <Text color={"white"} fontSize={"md"} fontFamily={"monospace"}>
+                        <Text color={"white"} fontSize={"md"} fontFamily={"monospace"} whiteSpace={"nowrap"}>
                           Tech:
                         </Text>
-                        <HStack spacing={5}>
+                        <HStack spacing={{base:4,lg:5}}>
                           <Icon
                             boxSize={"20px"}
                             as={SiDjango}
@@ -98,10 +98,10 @@ const Project = () => {
                         Game-Hub
                       </Heading>
                       <HStack>
-                        <Text color={"white"} fontSize={"md"} fontFamily={"monospace"}>
+                        <Text color={"white"} fontSize={"md"} fontFamily={"monospace"} whiteSpace={"nowrap"}>
                           Tech:
                         </Text>
-                        <HStack spacing={5}>
+                        <HStack spacing={{base:4,lg:5}}>
                           <Icon
                             boxSize={"20px"}
                             as={FaReact}
@@ -138,10 +138,10 @@ const Project = () => {
                       Haat-Baajar
                     </Heading>
                     <HStack>
-                      <Text color={"white"} fontSize={"md"} fontFamily={"monospace"}>
+                      <Text color={"white"} fontSize={"md"} fontFamily={"monospace"} whiteSpace={"nowrap"}>
                         Tech:
                       </Text>
-                      <HStack spacing={5}>
+                      <HStack spacing={{base:4,lg:5}}>
                         <Icon
                           boxSize={"20px"}
                           as={SiDjango}
