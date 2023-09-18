@@ -31,7 +31,7 @@ const arr = [
 const Technology = () => {
   return (
     <BodyContentContainer>
-      <Box marginTop={{ base: "140px", lg: "220px", xl: "220px" }} marginBottom={"60px"}>
+      <Box marginTop={{ base: "140px", lg: "220px", xl: "260px" }} marginBottom={"60px"}>
         <Heading
           color={"white"}
           textAlign={"center"}
