@@ -4,7 +4,7 @@ import CanvasAnimation from "./CanvasAnimation";
 
 const Canvas = () => {
   return (
-    <Box marginTop={{base:"150px",lg:"300px"}}>
+    <Box marginTop={{base:"150px",lg:"260px"}}>
         <BodyContentContainer>
       <Text
         color={"White"}
