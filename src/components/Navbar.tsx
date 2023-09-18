@@ -12,6 +12,8 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import mainLogo from "../assets/akatsuki.svg";
 
+const navigationElement = ["Technologies", "Projects", "Education", "Canvas"];
+
 const Navbar = () => {
   return (
     <HStack justifyContent={"space-between"} paddingTop={{ base: 2, md: 3 }}>
@@ -25,36 +27,16 @@ const Navbar = () => {
       {/* for laptop screen */}
       <Box display={{ base: "none", md: "block" }}>
         <HStack spacing={4}>
-          <Button
-            color={"white"}
-            variant={"outline"}
-            fontFamily={"monospace"}
-            whiteSpace={"nowrap"}
-          >
-            Technologies
-          </Button>
-          <Button
-            color={"white"}
-            variant={"outline"}
-            fontFamily={"monospace"}
-            whiteSpace={"nowrap"}
-          >
-            Projects
-          </Button>
-          <Button
-            color={"white"}
-            variant={"outline"}
-            fontFamily={"monospace"}
-            whiteSpace={"nowrap"}
-          >
-            Education
+          {navigationElement.map((element) => (
+            <Button
+              color={"white"}
+              variant={"outline"}
+              fontFamily={"monospace"}
+              whiteSpace={"nowrap"}
+            >
+              {element}
             </Button>
-            <Button 
-            color={"white"}
-            variant={"outline"}
-            fontFamily={"monospace"}>
-            Canvas
-          </Button>
+          ))}
         </HStack>
       </Box>
 
@@ -69,50 +51,19 @@ const Navbar = () => {
             color={"white"}
           />
           <MenuList>
-            <MenuItem>
-              <Button
-                color={"white"}
-                variant={"outline"}
-                width={"100%"}
-                fontFamily={"monospace"}
-                whiteSpace={"nowrap"}
-              >
-                Technologies
-              </Button>
-            </MenuItem>
-            <MenuItem>
-              <Button
-                color={"white"}
-                variant={"outline"}
-                width={"100%"}
-                fontFamily={"monospace"}
-                whiteSpace={"nowrap"}
-              >
-                Projects
-              </Button>
-            </MenuItem>
-            <MenuItem>
-              <Button
-                color={"white"}
-                variant={"outline"}
-                width={"100%"}
-                fontFamily={"monospace"}
-                whiteSpace={"nowrap"}
-              >
-                Education
-              </Button>
-            </MenuItem>
-            <MenuItem>
-            <Button 
-                color={"white"}
-                variant={"outline"}
-                width={"100%"}
-                fontFamily={"monospace"}
-                whiteSpace={"nowrap"}
-                 >
-                Canvas
-              </Button>
-            </MenuItem>
+            {navigationElement.map((element) => (
+              <MenuItem>
+                <Button
+                  color={"white"}
+                  variant={"outline"}
+                  width={"100%"}
+                  fontFamily={"monospace"}
+                  whiteSpace={"nowrap"}
+                >
+                  {element}
+                </Button>
+              </MenuItem>
+            ))}
           </MenuList>
         </Menu>
       </Box>
