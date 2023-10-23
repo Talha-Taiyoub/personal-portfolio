@@ -40,8 +40,8 @@ const Animation = ({ children, x_or_y,transitionDuration,scale }: Props) => {
         variants={animationVariants}
         // @ts-ignore no problem in operation, although type error appears.
         transition={{ duration: transitionDuration, type: "spring",}}
-        whileHover={{ scale: scale+.1 }}
-        whileTap={{ scale: scale-.1 }}
+        //whileHover={{ scale: scale+.1}}
+        //whileTap={{ scale: scale-.1 }}
       >
         {children}
       </ChakraBox>

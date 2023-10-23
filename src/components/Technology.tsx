@@ -31,7 +31,10 @@ const arr = [
 const Technology = () => {
   return (
     <BodyContentContainer>
-      <Box marginTop={{ base: "140px", lg: "220px", xl: "260px" }} marginBottom={"60px"}>
+      <Box
+        marginTop={{ base: "140px", lg: "220px", xl: "260px" }}
+        marginBottom={"60px"}
+      >
         <Heading
           color={"white"}
           textAlign={"center"}
@@ -50,7 +53,14 @@ const Technology = () => {
         >
           {arr.map((item) => (
             <Animation x_or_y="x" transitionDuration={2} scale={1}>
-              <Box display={"flex"} justifyContent={"center"}>
+              <Box
+                display={"flex"}
+                justifyContent={"center"}
+                _hover={{
+                  transform: "scale(1.15)",
+                  transition: "transform .15s ease-in",
+                }}
+              >
                 <Stack>
                   <Box display={"flex"} justifyContent={"center"}>
                     <Icon
@@ -80,4 +90,3 @@ const Technology = () => {
 };
 
 export default Technology;
-

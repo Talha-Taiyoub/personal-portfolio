@@ -88,6 +88,10 @@ const Project = () => {
                     borderRadius={20}
                     paddingX={{ base: "40px", lg: "20px" }}
                     paddingY={{ base: "25px", md: "20px" }}
+                    _hover={{
+                      transform:"scale(1.05)",
+                      transition:"transform .15s ease-in"
+                    }}
                   >
                     <Card overflow={"hidden"}>
                       <Image src={project.src} />
