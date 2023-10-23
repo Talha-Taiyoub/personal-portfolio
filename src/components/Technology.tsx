@@ -1,15 +1,14 @@
 import { Box, Heading, Icon, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { FaJava, FaLaptopCode, FaPhp, FaReact, FaRobot } from "react-icons/fa";
+import { GrMysql } from "react-icons/gr";
 import {
   SiDjango,
+  SiHeroku,
+  SiPostgresql,
   SiPython,
   SiTypescript,
   SiVercel,
-  SiPostgresql,
-  SiHeroku,
 } from "react-icons/si";
-import { FaReact, FaJava, FaLaptopCode, FaRobot, FaPhp } from "react-icons/fa";
-import { GrMysql } from "react-icons/gr";
-import { MdOutlineSecurity } from "react-icons/md";
 import Animation from "./Animation";
 import BodyContentContainer from "./BodyContentContainer";
 
@@ -51,8 +50,8 @@ const Technology = () => {
           columns={{ base: 2, lg: 3, xl: 4 }}
           spacing={16}
         >
-          {arr.map((item) => (
-            <Animation x_or_y="x" transitionDuration={2} scale={1}>
+          {arr.map((item,index) => (
+            <Animation key={index} x_or_y="x" transitionDuration={2} scale={1}>
               <Box
                 display={"flex"}
                 justifyContent={"center"}

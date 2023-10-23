@@ -75,15 +75,16 @@ const Project = () => {
             </Animation>
           </GridItem>
 
-          {gridItems.map((gridItem) => (
+          {gridItems.map((gridItem,index) => (
             <GridItem
+              key={index}
               area={gridItem.area}
               display={"flex"}
               alignItems={"center"}
             >
               <SimpleGrid columns={1}>
-              {gridItem.projects.map((project) => (
-                <Animation x_or_y="x" scale={1} transitionDuration={2}>
+              {gridItem.projects.map((project,index) => (
+                <Animation key={index} x_or_y="x" scale={1} transitionDuration={2}>
                   <Box
                     borderRadius={20}
                     paddingX={{ base: "40px", lg: "20px" }}
@@ -114,8 +115,9 @@ const Project = () => {
                             Tech:
                           </Text>
                           <HStack spacing={{ base: 4, lg: 5 }}>
-                            {project.icons.map((icon) => (
+                            {project.icons.map((icon,index) => (
                               <Icon
+                                key={index}
                                 boxSize={"20px"}
                                 as={icon}
                                 color={"gray.300"}

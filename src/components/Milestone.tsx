@@ -29,8 +29,9 @@ const Milestone = ({ milestones }: Props) => {
       >
         Academics
       </Text>
-      {newMilestones.map((milestone) => (
+      {newMilestones.map((milestone,index) => (
         <Grid
+          key={index}
           templateAreas={{base:`"iconLine card"`,lg:`"${milestone.firstCard} iconLine ${milestone.lastCard}"`}}
           gridTemplateColumns={{base:"0.1fr 1fr",lg:"1fr .1fr 1fr"}}
         >

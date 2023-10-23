@@ -27,8 +27,9 @@ const Navbar = () => {
       {/* for laptop screen */}
       <Box display={{ base: "none", md: "block" }}>
         <HStack spacing={4}>
-          {navigationElement.map((element) => (
+          {navigationElement.map((element,index) => (
             <Button
+              key={index}
               color={"white"}
               variant={"outline"}
               fontFamily={"monospace"}
@@ -51,8 +52,8 @@ const Navbar = () => {
             color={"white"}
           />
           <MenuList>
-            {navigationElement.map((element) => (
-              <MenuItem>
+            {navigationElement.map((element,index) => (
+              <MenuItem key={index}>
                 <Button
                   color={"white"}
                   variant={"outline"}
