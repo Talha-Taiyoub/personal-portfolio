@@ -1,24 +1,14 @@
-import { Grid, GridItem } from "@chakra-ui/react";
-import Intro from "../components/Intro";
-import Navbar from "../components/Navbar";
+import { Box } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 
 const Layout = () => {
   return (
-    <Grid
-      templateAreas={`"nav" "outlet"`}
-                    paddingX={{base:6,lg:20,}}
-    >
-      <GridItem area={"nav"}>
-        <Navbar/>
-      </GridItem>
-
-      <GridItem area={"outlet"}>
-        <Outlet/>
-      </GridItem>
-    </Grid>
-    
+    <Box paddingX={{ base: 6, lg: 20 }}>
+      <Navbar />
+      <Outlet />
+    </Box>
   );
 };
 export default Layout;
