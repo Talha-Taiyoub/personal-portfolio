@@ -18,69 +18,71 @@ const Intro = () => {
   //const isDesktop = useBreakpointValue({ base: false, lg: true });
   return (
     <BodyContentContainer>
-      <Grid
-        templateAreas={{
-          base: `"animation" "heading"`,
-          lg: `"heading animation"`,
-        }}
-        gridTemplateColumns={{ base: "1fr", lg: "0.80fr 1fr" }}
-      >
-        {/* Heading Area */}
-        <GridItem
-          area={"heading"}
-          display={"flex"}
-          alignItems={"center"}
-          justifyContent={"center"}
+      <Box marginBottom={{ base: "120px", lg: "180px", xl: "200px" }}>
+        <Grid
+          templateAreas={{
+            base: `"animation" "heading"`,
+            lg: `"heading animation"`,
+          }}
+          gridTemplateColumns={{ base: "1fr", lg: "0.80fr 1fr" }}
         >
-          <Box
-            color={"white"}
-            paddingRight={{ base: "0px", lg: "60px", xl: "80px" }}
-            paddingTop={{ base: "40px", lg: "0px" }}
+          {/* Heading Area */}
+          <GridItem
+            area={"heading"}
+            display={"flex"}
+            alignItems={"center"}
+            justifyContent={"center"}
           >
-            <Heading
-              fontSize={{ base: "lg", lg: "2xl" }}
-              fontFamily={"monospace"}
-              fontWeight={{ base: "semibold", md: "semibold" }}
+            <Box
+              color={"white"}
+              paddingRight={{ base: "0px", lg: "60px", xl: "80px" }}
+              paddingTop={{ base: "40px", lg: "0px" }}
             >
-              Hello it's me,
-            </Heading>
-            <Heading
-              textShadow={"10px 8px 8px black"}
-              fontFamily={"monospace"}
-              fontSize={{ base: "4xl", lg: "6xl" }}
-              fontWeight={{ base: "semibold", md: "semibold" }}
-            >
-              Talha Taiyoub
-            </Heading>
-            <Text
-              fontSize={{ lg: "md" }}
-              color={"gray.400"}
-              fontFamily={"monospace"}
-              textAlign={"justify"}
-            >
-              {text}
-            </Text>
-            <Text
-              fontSize={{ base: "sm", lg: "md" }}
-              fontFamily={"monospace"}
-              paddingTop="40px"
-            >
-              Scroll For More
-            </Text>
-          </Box>
-        </GridItem>
+              <Heading
+                fontSize={{ base: "lg", lg: "2xl" }}
+                fontFamily={"monospace"}
+                fontWeight={{ base: "semibold", md: "semibold" }}
+              >
+                Hello it's me,
+              </Heading>
+              <Heading
+                textShadow={"10px 8px 8px black"}
+                fontFamily={"monospace"}
+                fontSize={{ base: "4xl", lg: "6xl" }}
+                fontWeight={{ base: "semibold", md: "semibold" }}
+              >
+                Talha Taiyoub
+              </Heading>
+              <Text
+                fontSize={{ lg: "md" }}
+                color={"gray.400"}
+                fontFamily={"monospace"}
+                textAlign={"justify"}
+              >
+                {text}
+              </Text>
+              <Text
+                fontSize={{ base: "sm", lg: "md" }}
+                fontFamily={"monospace"}
+                paddingTop="40px"
+              >
+                Scroll For More
+              </Text>
+            </Box>
+          </GridItem>
 
-        {/* AnimationArea */}
-        <GridItem overflow={"hidden"} area={"animation"}>
-          <Animation
-            x_or_y="y"
-            transitionDuration={1.5}
-            scale={isMobile ? 1.3 : 1.1}
-          >
-            <IntroAnimation />
-          </Animation>
-        </GridItem>
-      </Grid>
+          {/* AnimationArea */}
+          <GridItem overflow={"hidden"} area={"animation"}>
+            <Animation
+              x_or_y="y"
+              transitionDuration={1.5}
+              scale={isMobile ? 1.3 : 1.1}
+            >
+              <IntroAnimation />
+            </Animation>
+          </GridItem>
+        </Grid>
+      </Box>
     </BodyContentContainer>
   );
 };

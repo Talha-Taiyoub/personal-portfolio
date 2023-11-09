@@ -2,10 +2,12 @@ import { Box, Heading, Icon, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import { FaJava, FaLaptopCode, FaPhp, FaReact, FaRobot } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import {
+  SiChakraui,
   SiDjango,
   SiHeroku,
   SiPostgresql,
   SiPython,
+  SiScrollreveal,
   SiTypescript,
   SiVercel,
 } from "react-icons/si";
@@ -25,14 +27,16 @@ const arr = [
   { icon: SiHeroku, color: "violet", name: "Heroku" },
   { icon: FaRobot, color: "", name: "Machine Learning" },
   { icon: FaPhp, color: "blue", name: "PHP" },
+  { icon: SiChakraui, color: "blue", name: "Chakra UI" },
+  { icon: SiScrollreveal, color: "blue", name: "Web Crawling" },
 ];
 
 const Technology = () => {
   return (
     <BodyContentContainer>
       <Box
-        marginTop={{ base: "140px", lg: "220px", xl: "260px" }}
-        marginBottom={"60px"}
+        marginTop={{ base: "20px", lg: "40px", xl: "60px" }}
+        marginBottom={{ base: "120px", lg: "180px", xl: "200px" }}
       >
         <Heading
           color={"white"}
@@ -50,7 +54,7 @@ const Technology = () => {
           columns={{ base: 2, lg: 3, xl: 4 }}
           spacing={16}
         >
-          {arr.map((item,index) => (
+          {arr.map((item, index) => (
             <Animation key={index} x_or_y="x" transitionDuration={2} scale={1}>
               <Box
                 display={"flex"}

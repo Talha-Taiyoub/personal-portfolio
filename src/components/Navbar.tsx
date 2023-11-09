@@ -11,29 +11,53 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import mainLogo from "../assets/akatsuki.svg";
+import { Link } from "react-router-dom";
 
 const navigationElement = ["Technologies", "Projects", "Education", "Canvas"];
 
-const Navbar = () => {
+interface Props {
+  scrollToTechnology: () => void;
+  scrollToProject: () => void;
+  scrollToEducation: () => void;
+  scrollToCanvas: () => void;
+}
+
+const Navbar = ({
+  scrollToTechnology,
+  scrollToProject,
+  scrollToEducation,
+  scrollToCanvas,
+}: Props) => {
   return (
     <HStack justifyContent={"space-between"} paddingTop={{ base: 2, md: 3 }}>
-      <Image
-        src={mainLogo}
-        boxSize={{ base: "60px", lg: "80px" }}
-        objectFit={"cover"}
-        borderRadius={"md"}
-      ></Image>
+      <Link to={"/"}>
+        <Image
+          src={mainLogo}
+          boxSize={{ base: "60px", lg: "80px" }}
+          objectFit={"cover"}
+          borderRadius={"md"}
+        />
+      </Link>
 
       {/* for laptop screen */}
       <Box display={{ base: "none", md: "block" }}>
         <HStack spacing={4}>
-          {navigationElement.map((element,index) => (
+          {navigationElement.map((element, index) => (
             <Button
               key={index}
               color={"white"}
               variant={"outline"}
               fontFamily={"monospace"}
               whiteSpace={"nowrap"}
+              onClick={() =>
+                element == "Technologies"
+                  ? scrollToTechnology()
+                  : element == "Projects"
+                  ? scrollToProject()
+                  : element == "Education"
+                  ? scrollToEducation()
+                  : scrollToCanvas()
+              }
             >
               {element}
             </Button>
@@ -52,7 +76,7 @@ const Navbar = () => {
             color={"white"}
           />
           <MenuList>
-            {navigationElement.map((element,index) => (
+            {navigationElement.map((element, index) => (
               <MenuItem key={index}>
                 <Button
                   color={"white"}
@@ -60,6 +84,15 @@ const Navbar = () => {
                   width={"100%"}
                   fontFamily={"monospace"}
                   whiteSpace={"nowrap"}
+                  onClick={() =>
+                    element == "Technologies"
+                      ? scrollToTechnology()
+                      : element == "Projects"
+                      ? scrollToProject()
+                      : element == "Education"
+                      ? scrollToEducation()
+                      : scrollToCanvas()
+                  }
                 >
                   {element}
                 </Button>

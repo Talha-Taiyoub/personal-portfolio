@@ -19,8 +19,8 @@ const ContactMe = () => {
       <Grid
         borderRadius={"20px"}
         fontFamily={"mono"}
-        marginTop={{ base: "200px", lg: "300px" }}
-        //marginTop={"200px"}
+        marginTop={{ base: "20px", lg: "40px", xl: "60px" }}
+        marginBottom={{ base: "120px", lg: "180px", xl: "200px" }}
         templateAreas={{
           base: `"start" "middle" "end"`,
           lg: `"start middle end"`,

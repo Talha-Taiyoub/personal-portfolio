@@ -60,7 +60,10 @@ const gridItems = [
 
 const Project = () => {
   return (
-    <Box paddingTop={{ base: "70px", lg: "100px",xl:"220px" }}>
+    <Box
+      marginTop={{ base: "20px", lg: "40px", xl: "60px" }}
+      marginBottom={{ base: "120px", lg: "180px", xl: "200px" }}
+    >
       <BodyContentContainer>
         <Grid
           templateAreas={{
@@ -75,7 +78,7 @@ const Project = () => {
             </Animation>
           </GridItem>
 
-          {gridItems.map((gridItem,index) => (
+          {gridItems.map((gridItem, index) => (
             <GridItem
               key={index}
               area={gridItem.area}
@@ -83,62 +86,66 @@ const Project = () => {
               alignItems={"center"}
             >
               <SimpleGrid columns={1}>
-              {gridItem.projects.map((project,index) => (
-                <Animation key={index} x_or_y="x" scale={1} transitionDuration={2}>
-                  <Box
-                    borderRadius={20}
-                    paddingX={{ base: "40px", lg: "20px" }}
-                    paddingY={{ base: "25px", md: "20px" }}
-                    _hover={{
-                      transform:"scale(1.05)",
-                      transition:"transform .15s ease-in"
-                    }}
+                {gridItem.projects.map((project, index) => (
+                  <Animation
+                    key={index}
+                    x_or_y="x"
+                    scale={1}
+                    transitionDuration={2}
                   >
-                    <Card overflow={"hidden"}>
-                      <Image src={project.src} />
-                      <CardBody bg={"gray.700"}>
-                        <Heading
-                          color={"white"}
-                          fontFamily={"monospace"}
-                          fontSize={{ base: "2xl", md: "3xl" }}
-                          fontWeight={"semibold"}
-                        >
-                          {project.name}
-                        </Heading>
-                        <HStack>
-                          <Text
+                    <Box
+                      borderRadius={20}
+                      paddingX={{ base: "40px", lg: "20px" }}
+                      paddingY={{ base: "25px", md: "20px" }}
+                      _hover={{
+                        transform: "scale(1.05)",
+                        transition: "transform .15s ease-in",
+                      }}
+                    >
+                      <Card overflow={"hidden"}>
+                        <Image src={project.src} />
+                        <CardBody bg={"gray.700"}>
+                          <Heading
                             color={"white"}
-                            fontSize={"md"}
                             fontFamily={"monospace"}
-                            whiteSpace={"nowrap"}
+                            fontSize={{ base: "2xl", md: "3xl" }}
+                            fontWeight={"semibold"}
                           >
-                            Tech:
-                          </Text>
-                          <HStack spacing={{ base: 4, lg: 5 }}>
-                            {project.icons.map((icon,index) => (
-                              <Icon
-                                key={index}
-                                boxSize={"20px"}
-                                as={icon}
-                                color={"gray.300"}
-                              ></Icon>
-                            ))}
+                            {project.name}
+                          </Heading>
+                          <HStack>
+                            <Text
+                              color={"white"}
+                              fontSize={"md"}
+                              fontFamily={"monospace"}
+                              whiteSpace={"nowrap"}
+                            >
+                              Tech:
+                            </Text>
+                            <HStack spacing={{ base: 4, lg: 5 }}>
+                              {project.icons.map((icon, index) => (
+                                <Icon
+                                  key={index}
+                                  boxSize={"20px"}
+                                  as={icon}
+                                  color={"gray.300"}
+                                ></Icon>
+                              ))}
+                            </HStack>
                           </HStack>
-                        </HStack>
-                        <Text
-                          color={"gray.400"}
-                          textAlign={"justify"}
-                          fontFamily={"monospace"}
-                        >
-                          {project.description}
-                        </Text>
-                      </CardBody>
-                    </Card>
-                  </Box>
-                </Animation>
-              ))}
+                          <Text
+                            color={"gray.400"}
+                            textAlign={"justify"}
+                            fontFamily={"monospace"}
+                          >
+                            {project.description}
+                          </Text>
+                        </CardBody>
+                      </Card>
+                    </Box>
+                  </Animation>
+                ))}
               </SimpleGrid>
-              
             </GridItem>
           ))}
         </Grid>
