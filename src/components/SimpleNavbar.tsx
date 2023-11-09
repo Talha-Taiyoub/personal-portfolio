@@ -4,7 +4,7 @@ import mainLogo from "../assets/akatsuki.svg";
 
 const SimpleNavbar = () => {
   return (
-    <HStack justifyContent={"space-between"} paddingTop={{ base: 2, md: 3 }}>
+    <HStack paddingTop={{ base: 2, md: 3 }}>
       <Link to={"/"}>
         <Image
           src={mainLogo}
