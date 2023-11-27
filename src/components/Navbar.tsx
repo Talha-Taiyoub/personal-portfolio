@@ -44,6 +44,7 @@ const Navbar = ({
         <HStack spacing={4}>
           {navigationElement.map((element, index) => (
             <Button
+              _hover={{bg:"#5c7b9a"}}
               key={index}
               color={"white"}
               variant={"outline"}
@@ -77,8 +78,9 @@ const Navbar = ({
           />
           <MenuList>
             {navigationElement.map((element, index) => (
-              <MenuItem key={index}>
+              <MenuItem key={index} _hover={{bg:"transparent"}}>
                 <Button
+                  _hover={{bg:"#5c7b9a"}}
                   color={"white"}
                   variant={"outline"}
                   width={"100%"}

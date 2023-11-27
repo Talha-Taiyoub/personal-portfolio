@@ -27,9 +27,11 @@ const gridItems = [
   {
     area: "cardOneTwo",
     projects: [
+      
       {
         name: "Edu-Hub",
-        src: card1,
+        github:"https://github.com/TalhaAnik56/EduHub",
+        imgSrc: card1,
         icons: [SiDjango, AiFillHtml5, GrMysql],
         description:
           "A classroom management system like Google Classroom,Canvas.",
@@ -37,7 +39,8 @@ const gridItems = [
 
       {
         name: "Game-Hub",
-        src: card2,
+        github:"https://github.com/TalhaAnik56/game-hub",
+        imgSrc: card2,
         icons: [FaReact, SiChakraui],
         description:
           "A video game discovery app, used rawg.io's api and made the frontend.",
@@ -48,11 +51,12 @@ const gridItems = [
     area: "cardThree",
     projects: [
       {
-        name: "Haat-Bajaar",
-        src: card3,
+        name: "Ohara",
+        github:"https://github.com/TalhaAnik56/Ohara",
+        imgSrc: card3,
         icons: [SiDjango, FaReact, SiPostgresql],
         description:
-          "An e-commerce web application to make shopping more convenient.",
+          "An e-commerce web application to buy and sell books conveniently.",
       },
     ],
   },
@@ -73,7 +77,7 @@ const Project = () => {
           gridTemplateColumns={{ base: "1fr", lg: "1.5fr 1fr 1fr" }}
         >
           <GridItem display={"flex"} alignItems={"center"} area={"animation"}>
-            <Animation transitionDuration={2} scale={0.9} x_or_y="x">
+            <Animation transitionDuration={2} scale={1} x_or_y="x">
               <ProjectAnimation />
             </Animation>
           </GridItem>
@@ -102,8 +106,8 @@ const Project = () => {
                         transition: "transform .15s ease-in",
                       }}
                     >
-                      <Card overflow={"hidden"}>
-                        <Image src={project.src} />
+                      <Card overflow={"hidden"} as={"a"} href={project.github} cursor={"pointer"} target="_blank">
+                        <Image src={project.imgSrc} />
                         <CardBody bg={"gray.700"}>
                           <Heading
                             color={"white"}

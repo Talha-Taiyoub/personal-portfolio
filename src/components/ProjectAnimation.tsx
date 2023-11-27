@@ -1,6 +1,6 @@
 import { Box, Text, Heading,Container } from '@chakra-ui/react'
 import Lottie from 'lottie-react'
-import projectAnimation from '../assets/techAnim1.json'
+import projectAnimation from '../assets/projectAnimation.json'
 
 const ProjectAnimation = () => {
   return (
