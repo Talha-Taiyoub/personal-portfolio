@@ -27,7 +27,7 @@ const milestones = [
   {
     id: 4,
     title: "Secondary School Certificate",
-    description: "Pabna Zill School.",
+    description: "Pabna Zilla School.",
     icon: FaSchool,
   },
 ];
