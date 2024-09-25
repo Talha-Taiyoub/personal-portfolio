@@ -12,7 +12,7 @@ const socials = [
   },
   {
     id: 2,
-    link: "https://github.com/TalhaAnik56",
+    link: "https://github.com/Talha-Taiyoub",
     icon: BsGithub,
   },
   {
