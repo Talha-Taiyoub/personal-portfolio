@@ -9,23 +9,29 @@ const milestones = [
   {
     id: 1,
     title: "Research (ongoing)",
-    description: "Emotion detection using Deep Learning.",
+    description: "Explainable AI-driven phishing website detection using hybrid machine learning models.",
     icon: GiArchiveResearch,
   },
   {
     id: 2,
+    title: "Research (ongoing)",
+    description: "Bengali SMS fraud detection using NLP and machine learning techniques.",
+    icon: GiArchiveResearch,
+  },
+  {
+    id: 3,
     title: "Bachelor of Science",
     description: "Computer Science Engineering, North South University.",
     icon: MdSchool,
   },
   {
-    id: 3,
+    id: 4,
     title: "Higher Secondary School Certificate",
     description: "Notre Dame College,Dhaka.",
     icon: FaUniversity,
   },
   {
-    id: 4,
+    id: 5,
     title: "Secondary School Certificate",
     description: "Pabna Zilla School.",
     icon: FaSchool,
