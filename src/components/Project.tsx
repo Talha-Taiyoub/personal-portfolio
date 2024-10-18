@@ -20,7 +20,7 @@ import { GrMysql } from "react-icons/gr";
 import ProjectAnimation from "./ProjectAnimation";
 import Animation from "./Animation";
 import card1 from "../assets/images/eduHub2.jpg";
-import card2 from "../assets/images/gamehub.jpg";
+import card2 from "../assets/images/omni-residency.png";
 import card3 from "../assets/images/haatBajar.jpeg";
 
 const gridItems = [
@@ -38,12 +38,12 @@ const gridItems = [
       },
 
       {
-        name: "Game-Hub",
-        github:"https://github.com/TalhaAnik56/game-hub",
+        name: "Omni Residency",
+        github:"https://github.com/Talha-Taiyoub/django-omni-admin",
         imgSrc: card2,
-        icons: [FaReact, SiChakraui],
+        icons: [SiDjango,GrMysql],
         description:
-          "A video game discovery app, used rawg.io's api and made the frontend.",
+          "Omni Residency is designed to manage multiple branches for a hospitality company.",
       },
     ],
   },
